@@ -6,14 +6,14 @@ from .models import *
 
 
 class MatchesAdmin(admin.ModelAdmin):
-    list_display = ['id', 'home', 'away', 'ods_1', 'ods_x', 'ods_2', 'time', 'result']
+    list_display = ['id', 'home', 'away', 'odds_1', 'odds_x', 'odds_2', 'time', 'result']
 
 
 admin.site.register(Matches, MatchesAdmin)
 
 
 class TicketsAdmin(admin.ModelAdmin):
-    list_display = ['id', 'ods_total', 'status', ]
+    list_display = ['id', 'odds_total', 'status', ]
 
 
 admin.site.register(Tickets, TicketsAdmin)
