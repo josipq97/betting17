@@ -6,7 +6,7 @@ from .models import *
 
 
 class MatchesAdmin(admin.ModelAdmin):
-    list_display = ['id', 'home', 'away', 'odds_1', 'odds_x', 'odds_2', 'time', 'result']
+    list_display = ['id', 'league_country', 'league_title', 'home', 'away', 'odds_1', 'odds_x', 'odds_2', 'date', 'time', 'result']
 
 
 admin.site.register(Matches, MatchesAdmin)
